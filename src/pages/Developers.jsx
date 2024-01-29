@@ -1,16 +1,15 @@
 import React from "react";
 import "../styles/developers/developers.css";
 import { Link } from "react-router-dom";
-import GitHub from "../assets/static_images/github.svg"
-import Instagram from "../assets/static_images/instagram.svg"
-import LinkedIn from "../assets/static_images/linkedin.svg"
-import Steve from "../assets/developers/Steve Fernandes.png"
-import Tanay from "../assets/developers/Tanay.jpg"
-import Jitesh from "../assets/developers/Jitesh Dubey.jpg"
-import Aditi from "../assets/developers/Aditi Yadav.jpg"
-import Aniket from "../assets/developers/Aniket Gupta.jpg"
-import Sumit from "../assets/developers/Sumit Tiwari.jpg"
-
+import GitHub from "../assets/static_images/github.svg";
+import Instagram from "../assets/static_images/instagram.svg";
+import LinkedIn from "../assets/static_images/linkedin.svg";
+import Steve from "../assets/developers/Steve Fernandes.png";
+import Tanay from "../assets/developers/Tanay.jpg";
+import Jitesh from "../assets/developers/Jitesh Dubey.jpg";
+import Aditi from "../assets/developers/Aditi Yadav.jpg";
+import Aniket from "../assets/developers/Aniket Gupta.jpg";
+import Sumit from "../assets/developers/Sumit Tiwari.jpg";
 
 const developersData = [
   {
@@ -77,11 +76,10 @@ const developersData = [
 
 const Developers = () => {
   return (
-    <div>
+    <div id="main-developers-container">
       <div className="developer-info">
-        <div className="colors">
+        <div className="developers-colors">
           <div className="circle"></div>
-          <div className="random"></div>
         </div>
         <h1>Meet The Developers</h1>
         <div className="developer-detail-cards">
@@ -103,21 +101,33 @@ const Developers = () => {
                     to={developer.social.instagram}
                     target="_blank"
                   >
-                    <img src={Instagram} className="icons insta" alt="Instagram logo" />
+                    <img
+                      src={Instagram}
+                      className="icons insta"
+                      alt="Instagram logo"
+                    />
                   </Link>
                   <Link
                     className="icon_link"
                     to={developer.social.linkedin}
                     target="_blank"
                   >
-                    <img src={LinkedIn} className="icons linked" alt="LinkedIn logo" />
+                    <img
+                      src={LinkedIn}
+                      className="icons linked"
+                      alt="LinkedIn logo"
+                    />
                   </Link>
                   <Link
                     className="icon_link"
                     to={developer.social.github}
                     target="_blank"
                   >
-                    <img src={GitHub} className="icons github" alt="GitHub logo" />
+                    <img
+                      src={GitHub}
+                      className="icons github"
+                      alt="GitHub logo"
+                    />
                   </Link>
                 </div>
               </div>

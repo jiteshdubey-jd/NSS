@@ -4,15 +4,14 @@ import { useState } from "react";
 import Scroller from "../components/Scroller";
 import ReactCardFlip from "react-card-flip";
 import JcContainer from "../components/TeamCardcontainer";
-// import Images from "../assets/index";
 // import ImageGallery from "../components/ImageGallery";
-import NSS_chairperson from "../assets/home/nss_chairperson.png"
-import Map from "../components/HomeMap"
-import Socials from "../components/HomeSocials"
-import SatishSingh from "../assets/team/Dr. Satish Singh.png"
-import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png"
-import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png"
-import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png"
+import NSS_chairperson from "../assets/testimonial/BK-Mishra.webp";
+import Map from "../components/HomeMap";
+import Socials from "../components/HomeSocials";
+import SatishSingh from "../assets/team/Dr. Satish Singh.png";
+import VinitaAgarwal from "../assets/team/Dr. Vinita Agarwal.png";
+import SajjanKumar from "../assets/team/Mr. Sajjankumar Lal.png";
+import JyotiVanave from "../assets/team/Ms. Jyoti Vanawe.png";
 
 const Team = () => {
   const [isFlipped, setIsFlipped] = useState({
@@ -84,10 +83,7 @@ const Team = () => {
               >
                 <div className="front">
                   <div className="front_content">
-                    <img
-                      src={SatishSingh}
-                      alt="Programme Officer-Satish Sir"
-                    />
+                    <img src={SatishSingh} alt="Programme Officer-Satish Sir" />
                     <div className="prog-detail">
                       <h1>Dr. Satish Singh</h1>
                       <h3>-Programme Officer</h3>
@@ -204,7 +200,10 @@ const Team = () => {
               >
                 <div className="front">
                   <div className="front_content">
-                    <img src={JyotiVanave} alt="Deputy Programme Officer Jyoti Vanave" />
+                    <img
+                      src={JyotiVanave}
+                      alt="Deputy Programme Officer Jyoti Vanave"
+                    />
                     <div className="depu_po_details">
                       <h1>Jyoti Vanawe</h1>
                       <h3>-Deputy Programme Officer</h3>
