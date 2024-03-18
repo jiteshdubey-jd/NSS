@@ -81,6 +81,6 @@ const TestimonialIMages = {
   Ruchi: require("./Ruchi Yadav.jpg"),
   Tanay: require("./Tanay.jpg"),
   Nandkumar: require("./Nandkumar Pandey.jpg"),
-  Gourav: require("../team/Gourav Singh.webp"),
+  Gourav: require("./Gourav Singh.png"),
 };
 export default TestimonialIMages;
