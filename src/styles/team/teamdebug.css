@@ -1,0 +1,15 @@
+.prog-officer {
+  box-shadow: 2px 2px 15px #000000c2;
+  border-radius: 2rem;
+  max-height: 65vh;
+  width: fit-content;
+  padding: 1rem 0;
+  pointer-events: all;
+}
+.prog-officer > img {
+  height: 50vh;
+}
+.prog-detail {
+  width: fit-content;
+  margin: auto;
+}

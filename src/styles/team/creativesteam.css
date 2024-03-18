@@ -1,0 +1,95 @@
+.team-creatives {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.teams-info {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: -1vh;
+}
+.team-creatives-image-container {
+  display: flex;
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teams-image-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: green;
+}
+.team-creatives-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.team-creatives-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  max-width: 50%;
+  text-align: center;
+  background-color: #00000086;
+  border-top-right-radius: 30px;
+}
+
+.team-creatives-text-container h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: white;
+  font-family: Roboto-web;
+}
+
+.team-creatives-text-container p {
+  color: white;
+  margin-top: 0.4vh;
+  font-family: Roboto-web;
+}
+
+@media only screen and (max-width: 1200px) {
+  .team-creatives-text-container {
+    padding: 0.2rem;
+    max-width: 50%;
+  }
+  .team-creatives-text-container h2 {
+    font-size: 3.5vw;
+  }
+
+  .team-creatives-text-container p {
+    color: white;
+    margin-top: 0.4vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team-creatives-image-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .team-creatives-text-container p {
+    color: white;
+    margin-top: 0.4vw;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .team-creatives-text-container {
+    max-width: 90%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0 1rem;
+  }
+
+  .team-creatives-text-container h2 {
+    font-size: 1rem;
+  }
+
+  .team-creatives-text-container p {
+    font-size: 0.8rem;
+  }
+}

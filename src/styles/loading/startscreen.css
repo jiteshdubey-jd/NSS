@@ -1,0 +1,103 @@
+.loading-screen-container {
+    background-color: #f0f7ff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    animation: translate_loader_y 500ms ease-in-out 4s forwards;
+}
+
+@keyframes translate_loader_y {
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.loading-element-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.nss-loader-image {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    animation: rotate_nss_image 800ms  ease-in-out  forwards;
+}
+
+@keyframes rotate_nss_image {
+    from {
+        scale: 0;
+        rotate: -180deg;
+    }
+    to {
+        scale: 1;
+        rotate: 0deg;
+    }
+    
+}
+
+.loading-element-container h2 {
+    font-family: Roboto-web, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(43, 43, 43, 0.491);
+    white-space: nowrap;
+    transform: translateY(1rem);
+    opacity: 0;
+    transition: 800ms ease-in-out;
+    animation: show_text_loader 300ms ease-in-out 1.5s forwards;
+}
+
+.loading-element-container h3 {
+    font-family: Roboto-web, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 800ms ease-in-out;
+    animation: show_text_loader 500ms ease-in-out 2s forwards;
+}
+
+@keyframes show_text_loader {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .nss-loader-image {
+        height: 13rem;
+        width: 13rem;
+    }
+    .loading-element-container h2 {
+        font-size: 2.5rem;
+    }
+    .loading-element-container h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .nss-loader-image {
+        height: 10rem;
+        width: 10rem;
+    }
+    .loading-element-container h2 {
+        font-size: 2rem;
+    }
+    .loading-element-container h3 {
+        font-size: 1.2rem;
+    }
+}

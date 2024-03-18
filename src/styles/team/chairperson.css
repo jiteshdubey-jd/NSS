@@ -1,0 +1,163 @@
+#chairperson-container {
+  overflow: hidden;
+}
+
+#chairperson-container .colors .circle1 {
+  height: 35rem;
+  width: 35rem;
+  background-color: #e3dffdee;
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+#chairperson-container .colors .circle2 {
+  height: 35vw;
+  width: 35rem;
+  background-color: #ccf7f1e3;
+  position: absolute;
+  bottom: 10%;
+  right: -20%;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+#chairperson-container .chairperson-content {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  margin-top: 3em;
+  justify-content: center;
+  padding: 5vw 10vw;
+}
+#chairperson-container .table {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 2vw 3vw;
+  justify-content: space-between;
+}
+#chairperson-container .table #chairperson {
+  height: 30vw;
+  width: 39%;
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.table #chairperson img {
+  width: 22vw;
+  margin-top: -1vw;
+}
+#chairperson-container .table .detail_chairperson {
+  width: 60%;
+  padding: 0 1vw;
+  overflow: visible;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.chairman_detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.8vw;
+}
+#chairperson-container .table .detail_chairperson h1 {
+  color: #000;
+  font-size: 4.2vw;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  font-family: Roboto-web;
+  text-transform: uppercase;
+}
+.detail_chairperson h3 {
+  color: rgb(46, 41, 41);
+  font-size: 1.8vw;
+  line-height: 1;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+.detail_chairperson .principals_desk {
+  color: #000;
+  width: 100%;
+  font-size: 1.5vw;
+  line-height: 1.1;
+  text-align: justify;
+  padding: 0 2vw;
+  font-family: Roboto-web;
+  text-wrap: balance;
+}
+
+/* A typical set of breakpoints might include widths of 320px, 480px, 768px, 1024px, and 1200px. */
+
+@media screen and (max-width: 1024px) {
+  #chairperson-container .chairperson-content {
+    padding: 8vw 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #chairperson-container .table .detail_chairperson h3 {
+    margin-top: -0.5vw;
+  }
+  .detail_chairperson .principals_desk {
+    margin-top: -0.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #chairperson-container .table {
+    flex-direction: column;
+    padding: 5vw 3vw;
+  }
+  #chairperson-container .table #chairperson {
+    height: 70%;
+    width: 90%;
+    border-radius: 1rem;
+    padding: 0;
+  }
+  .table #chairperson img {
+    height: auto;
+    width: 90%;
+  }
+
+  #chairperson-container .table .detail_chairperson {
+    width: 100%;
+  }
+
+  .chairman_detail {
+    margin: 1vw;
+  }
+  #chairperson-container .table .detail_chairperson h1 {
+    font-size: 1.3rem;
+  }
+  .detail_chairperson h3 {
+    font-size: 0.8rem;
+    line-height: 1;
+    margin: 1vw;
+    padding-top: 1vw;
+  }
+  .detail_chairperson .principals_desk {
+    font-size: 0.9rem;
+    height: max-content;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width:320px) {
+    
+} */

@@ -1,0 +1,160 @@
+.jc-card-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#jc-container-header {
+  text-align: center;
+  font-family: Roboto-web;
+  font-weight: 800;
+  font-size: 9vh;
+}
+
+#jc-container-info {
+  text-align: center;
+  font-family: Roboto-web;
+  font-size: 1.5vw;
+  width: 75%;
+  margin: auto;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.junior-counil-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+  padding: 2vw 0;
+}
+
+.jc-card-wrapper {
+  width: 20vw;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: aquamarine;
+}
+
+.jc-card {
+  padding: 2vw;
+  height: 100%;
+  width: 100%;
+  background-color: #ecf0f3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jc-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  border-radius: 50%;
+  outline: none;
+  border: 5px solid lightblue;
+  margin-bottom: 12px;
+}
+
+.jc-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.jc-name {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.jc-position {
+  color: #555;
+  font-size: 1.1vw;
+  margin-bottom: 8px;
+}
+
+.jc-quote {
+  margin-top: 1rem;
+  font-style: italic;
+  text-wrap: wrap;
+  font-size: 1vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #jc-container-header {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .junior-counil-card-wrapper {
+    column-gap: 6vw;
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 486px) {
+  .junior-counil-card-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  #jc-container-header {
+    text-align: center;
+    font-family: Roboto-web;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #jc-container-info {
+    font-family: Roboto-web;
+    width: 100%;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+  }
+  .jc-card-wrapper {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+
+  .jc-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .jc-image {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .jc-detail {
+    text-align: center;
+  }
+
+  .jc-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .jc-position {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .jc-quote {
+    font-size: 1rem;
+  }
+}
