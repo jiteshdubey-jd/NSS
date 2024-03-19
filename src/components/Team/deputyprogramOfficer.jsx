@@ -41,7 +41,10 @@ const Team = () => {
         </div>
         <div className="dep-prog">
           <div id="dep_box">
-            <div className="card" onClick={() => handleClick("card3")}>
+            <div
+              className="deputy-program-officer-card"
+              onClick={() => handleClick("card3")}
+            >
               <ReactCardFlip
                 isFlipped={isFlipped.card3}
                 flipDirection="horizontal"
@@ -80,7 +83,10 @@ const Team = () => {
             </div>
           </div>
           <div id="dep_box">
-            <div className="card" onClick={() => handleClick("card4")}>
+            <div
+              className="deputy-program-officer-card"
+              onClick={() => handleClick("card4")}
+            >
               <ReactCardFlip
                 isFlipped={isFlipped.card4}
                 flipDirection="horizontal"

@@ -66,7 +66,6 @@
   align-items: center;
   justify-content: space-around;
   gap: 0rem;
-  background-color: red;
   padding: 0 4.5rem;
 }
 
@@ -120,7 +119,7 @@
 
 @media screen and (max-width: 426px) {
   .modal {
-    width: 22rem;
+    width: 20rem;
     padding: 0rem 0.5rem;
   }
 
@@ -131,7 +130,7 @@
     margin-left: 92%;
   }
   .every-details {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
   .every-details p {
     font-size: 1rem;
@@ -177,6 +176,7 @@
 
   .every-details {
     gap: 0.5rem;
+    background-color: yellow;
   }
 
   .modal-image {

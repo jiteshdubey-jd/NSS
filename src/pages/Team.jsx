@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-
 import { Map } from "../components/Common/index";
 import Socials from "../components/Common/Socials";
 import Chairperson from "../components/Team/chairperson";
